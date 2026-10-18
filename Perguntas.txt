@@ -9,6 +9,15 @@ Quanto ao Pop, no Git temos o comando git stash pop, que permite recuperar alter
 
 
 2 – Quais sáo as vantagens de usar Branchs num repositório git?
+
+R2:
+As branches permitem trabalhar em diferentes funcionalidades ou correções sem interferir diretamente com o código principal do projeto.
+
+Por exemplo, quando estamos a desenvolver uma nova funcionalidade, podemos criar uma branch específica para esse trabalho, fazer os testes e, quando estiver tudo validado, integrar as alterações na branch principal.
+
+Outra vantagem é que vários programadores podem trabalhar em tarefas diferentes no mesmo projeto, sem terem de alterar constantemente os mesmos ficheiros na branch principal.
+
+
 3 – Nos Merges de conteúdos resultantes de um “Pop” podem resultar em conflitos. Em
 que consistem e como podem ser resolvidos esses conflitos?
 4 – “Clone” e “Fork” são formas diferentes de replicar um repositório Git. Quais as
