@@ -31,3 +31,12 @@ No VS Code, por exemplo, conseguimos visualizar os conflitos, comparar as altera
 
 4 – “Clone” e “Fork” são formas diferentes de replicar um repositório Git. Quais as
 diferenças entre eles?
+
+R4:
+O Clone permite criar uma cópia de um repositório remoto no nosso computador. É o que fazemos quando queremos começar a trabalhar localmente num projecto que está no GitHub ou GitLab.
+
+O Fork, por sua vez, cria uma cópia de um repositório na nossa própria conta da plataforma, permitindo desenvolver alterações de forma independente do projecto original.
+
+A principal diferença é que o Clone traz o repositório para o nosso ambiente local, enquanto o Fork cria outro repositório na plataforma. Depois de fazer um Fork, também podemos cloná-lo para o nosso computador.
+
+O Fork é bastante utilizado quando queremos contribuir para projectos de outras pessoas sem termos permissão para alterar directamente o repositório original.
