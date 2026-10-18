@@ -20,5 +20,14 @@ Outra vantagem é que vários programadores podem trabalhar em tarefas diferente
 
 3 – Nos Merges de conteúdos resultantes de um “Pop” podem resultar em conflitos. Em
 que consistem e como podem ser resolvidos esses conflitos?
+
+R3:
+Os conflitos acontecem quando o Git encontra alterações que não consegue conciliar automaticamente. Isto pode acontecer, por exemplo, quando duas pessoas alteram a mesma parte de um ficheiro ou quando recuperamos alterações guardadas com git stash pop que entram em conflito com as alterações actuais.
+
+Quando isso acontece, temos de analisar as alterações em conflito e decidir qual delas deve permanecer ou como combinar as duas.
+
+No VS Code, por exemplo, conseguimos visualizar os conflitos, comparar as alterações e escolher o conteúdo que pretendemos manter. Depois de resolver os conflitos, guardamos os ficheiros e utilizamos o git add para indicar que foram resolvidos.
+
+
 4 – “Clone” e “Fork” são formas diferentes de replicar um repositório Git. Quais as
 diferenças entre eles?
