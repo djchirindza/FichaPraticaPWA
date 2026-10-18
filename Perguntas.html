@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perguntas e Respostas — Git</title>
+  <style>
+    body { font-family: Arial, Helvetica, sans-serif; line-height: 1.65; color: #20252c; background: #f6f7f9; margin: 0; padding: 32px 16px; }
+    main { max-width: 860px; margin: 0 auto; padding: 28px 36px; background: #fff; border: 1px solid #e5e7eb; border-radius: 8px; }
+    h1 { margin-top: 0; font-size: 1.8rem; }
+    h2 { font-size: 1.15rem; margin-top: 28px; }
+    p, li { font-size: 1rem; }
+    li { margin-bottom: 8px; }
+    .identificacao { color: #4b5563; border-bottom: 1px solid #e5e7eb; padding-bottom: 15px; }
+    code { background: #f1f3f5; border-radius: 3px; padding: 1px 4px; }
+    @media (max-width: 600px) { main { padding: 20px; } body { padding: 10px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Perguntas e Respostas sobre Git</h1>
+    <p class="identificacao"><strong>Estudante:</strong> Delcínio Chirindza<br>
+      <strong>Curso:</strong> Mestrado em Engenharia Informática e Tecnologias Web</p>
+
+    <ol>
+      <li>
+        <h2>O que são operações de “Commit”, “Push” e “Pop” efectuadas num repositório?</h2>
+        <p>O <strong>Commit</strong> permite guardar as alterações feitas no repositório local, criando um registo que podemos consultar posteriormente para perceber o que foi alterado.</p>
+        <p>O <strong>Push</strong> é utilizado para enviar os commits do nosso repositório local para o repositório remoto, por exemplo, no GitHub ou GitLab.</p>
+        <p>Quanto ao <strong>Pop</strong>, no Git temos o comando <code>git stash pop</code>, que permite recuperar alterações que tínhamos guardado temporariamente com o <code>git stash</code>, retirando-as da lista de alterações guardadas, caso a aplicação seja bem-sucedida.</p>
+        <p>Existe também o <strong>Pull</strong>, que utilizamos para trazer as alterações do repositório remoto e integrá-las na nossa branch local. <em>Não se deve confundir Pull com Pop.</em></p>
+      </li>
+      <li>
+        <h2>Quais são as vantagens de usar Branches num repositório Git?</h2>
+        <p>As <strong>branches</strong> permitem trabalhar em diferentes funcionalidades ou correcções sem interferir directamente com o código principal do projecto.</p>
+        <p>Por exemplo, quando estamos a desenvolver uma nova funcionalidade, podemos criar uma branch específica para esse trabalho, fazer os testes e, quando estiver tudo validado, integrar as alterações na branch principal.</p>
+        <p>Entre as principais vantagens estão:</p>
+        <ul>
+          <li>Separar o desenvolvimento de funcionalidades e correcções.</li>
+          <li>Facilitar o trabalho de vários programadores no mesmo projecto.</li>
+          <li>Testar alterações antes de as integrar na branch principal.</li>
+        </ul>
+      </li>
+      <li>
+        <h2>Nos merges de conteúdos resultantes de um “Pop” podem surgir conflitos. Em que consistem e como podem ser resolvidos?</h2>
+        <p>Os conflitos acontecem quando o Git encontra alterações que não consegue conciliar automaticamente. Isto pode acontecer, por exemplo, quando duas pessoas alteram a mesma parte de um ficheiro ou quando recuperamos alterações guardadas com <code>git stash pop</code> que entram em conflito com as alterações actuais.</p>
+        <p>Para resolver um conflito, podemos seguir estes passos:</p>
+        <ol>
+          <li>Identificar os ficheiros com conflito.</li>
+          <li>Comparar as versões e decidir que conteúdo manter ou como combinar as alterações.</li>
+          <li>Editar e guardar os ficheiros, removendo as marcações de conflito.</li>
+          <li>Usar <code>git add</code> para indicar que os conflitos foram resolvidos.</li>
+        </ol>
+        <p>No VS Code, podemos visualizar as diferenças e resolver os conflitos com o editor. <u>É importante verificar o resultado antes de continuar o trabalho.</u></p>
+      </li>
+      <li>
+        <h2>“Clone” e “Fork” são formas diferentes de replicar um repositório Git. Quais são as diferenças entre eles?</h2>
+        <p>O <strong>Clone</strong> permite criar uma cópia de um repositório remoto no nosso computador. É o que fazemos quando queremos começar a trabalhar localmente num projecto que está no GitHub ou GitLab.</p>
+        <p>O <strong>Fork</strong>, por sua vez, cria uma cópia de um repositório na nossa própria conta da plataforma, permitindo desenvolver alterações de forma independente do projecto original.</p>
+        <p>A diferença principal é esta: <u>o Clone cria uma cópia local, enquanto o Fork cria outro repositório na plataforma</u>. Depois de fazer um Fork, também podemos cloná-lo para o nosso computador.</p>
+        <p>O Fork é bastante utilizado quando queremos contribuir para projectos de outras pessoas sem termos permissão para alterar directamente o repositório original.</p>
+      </li>
+    </ol>
+  </main>
+</body>
+</html>
